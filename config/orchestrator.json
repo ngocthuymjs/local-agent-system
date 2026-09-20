@@ -1,0 +1,30 @@
+{
+  "name": "Local Agent Orchestrator",
+  "version": "1.0.0",
+  "description": "Orchestrates local agents based on GitHub Project tasks",
+  "github": {
+    "owner": "JaneTran",
+    "repo": "local-agent-system",
+    "projectId": null,
+    "tokenEnvVar": "GITHUB_TOKEN"
+  },
+  "polling": {
+    "enabled": true,
+    "intervalSeconds": 30,
+    "checkTodoStatus": true
+  },
+  "task_statuses": {
+    "backlog": "BACKLOG",
+    "todo": "TODO",
+    "running": "RUNNING",
+    "review": "REVIEW",
+    "done": "DONE",
+    "failed": "FAILED"
+  },
+  "logging": {
+    "level": "info",
+    "logDir": "./orchestrator/logs",
+    "maxSizeMB": 10,
+    "maxFiles": 5
+  }
+}

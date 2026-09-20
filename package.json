@@ -1,0 +1,27 @@
+{
+  "name": "local-agent-system",
+  "version": "1.0.0",
+  "description": "Local multi-agent system with GitHub integration",
+  "main": "orchestrator/main.js",
+  "type": "module",
+  "scripts": {
+    "orchestrator": "node orchestrator/main.js",
+    "agent:research": "node agents/research/main.js",
+    "agent:coding": "node agents/coding/main.js",
+    "agent:writing": "node agents/writing/main.js"
+  },
+  "dependencies": {
+    "octokit": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "agents",
+    "github",
+    "orchestration",
+    "automation"
+  ],
+  "author": "JaneTran",
+  "license": "MIT"
+}

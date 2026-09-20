@@ -1,0 +1,56 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Secrets and credentials
+*.pem
+*.key
+*.p8
+secrets/
+credentials/
+.ssh/
+
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# GitHub token and auth
+github_token.txt
+.github/credentials
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+orchestrator/logs/*
+!orchestrator/logs/.gitkeep
+
+# Outputs (but keep structure)
+outputs/*
+!outputs/.gitkeep
+
+# Tasks
+tasks/*
+!tasks/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db

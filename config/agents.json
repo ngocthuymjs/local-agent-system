@@ -1,0 +1,44 @@
+{
+  "agents": [
+    {
+      "id": "research",
+      "name": "Research Agent",
+      "description": "Gathers and collects structured information from various sources",
+      "path": "./agents/research",
+      "entrypoint": "main.js",
+      "enabled": true,
+      "capabilities": [
+        "web_search",
+        "data_collection",
+        "summarization"
+      ]
+    },
+    {
+      "id": "coding",
+      "name": "Coding Agent",
+      "description": "Creates, edits, and debugs code",
+      "path": "./agents/coding",
+      "entrypoint": "main.js",
+      "enabled": true,
+      "capabilities": [
+        "code_generation",
+        "code_editing",
+        "testing",
+        "debugging"
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Writing Agent",
+      "description": "Analyzes and produces written content",
+      "path": "./agents/writing",
+      "entrypoint": "main.js",
+      "enabled": true,
+      "capabilities": [
+        "content_analysis",
+        "report_generation",
+        "summarization"
+      ]
+    }
+  ]
+}
