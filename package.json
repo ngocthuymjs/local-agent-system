@@ -6,12 +6,14 @@
   "type": "module",
   "scripts": {
     "orchestrator": "node orchestrator/main.js",
+    "orchestrator:dev": "node --watch orchestrator/main.js",
     "agent:research": "node agents/research/main.js",
     "agent:coding": "node agents/coding/main.js",
-    "agent:writing": "node agents/writing/main.js"
+    "agent:writing": "node agents/writing/main.js",
+    "test": "echo 'Tests coming soon'"
   },
   "dependencies": {
-    "octokit": "^3.0.0"
+    "@octokit/rest": "^20.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
