@@ -1,7 +1,7 @@
 # Local Multi-Agent System - Project Context
 
 **Last Updated:** 2026-09-27
-**Status:** Phase 6 Complete - GitHub Integration Built
+**Status:** Phase 6 Complete + Agent Rules Added
 **Next Phase:** Phase 7 - Test 3 Agents End-to-End
 
 ---
@@ -86,6 +86,15 @@ npm run orchestrator
 # creates task on GitHub with labels: task + agent:research|coding|writing
 # orchestrator polls every 30s, marks RUNNING -> REVIEW, saves outputs/task-<n>-<agent>.md
 ```
+
+---
+
+## ✅ Agent Rules (DONE 2026-09-27)
+
+- `agents/COMMON.md`: shared DO & DON'T (secrets, no-delete zones, max 3 retries, only orchestrator talks to GitHub)
+- `agents/research| coding|writing/AGENT.md`: role-specific rules (sources / tests / facts)
+- `AgentManager` loads both files per agent at startup (`getRules`, `hasRules`, `rulesApplied` in result)
+- Tests: `orchestrator/agent-rules.test.js` 6/6 pass; full suite 12/12 pass
 
 ---
 
