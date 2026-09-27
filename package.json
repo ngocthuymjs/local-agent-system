@@ -10,7 +10,7 @@
     "agent:research": "node agents/research/main.js",
     "agent:coding": "node agents/coding/main.js",
     "agent:writing": "node agents/writing/main.js",
-    "test": "echo 'Tests coming soon'"
+    "test": "node --test orchestrator/phase6.test.js"
   },
   "dependencies": {
     "@octokit/rest": "^20.0.0"

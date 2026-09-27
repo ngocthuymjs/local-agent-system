@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Orchestrates local agents based on GitHub Project tasks",
   "github": {
-    "owner": "JaneTran",
+    "owner": "ngocthuymjs",
     "repo": "local-agent-system",
     "projectId": null,
     "tokenEnvVar": "GITHUB_TOKEN"
